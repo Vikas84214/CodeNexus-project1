@@ -1,0 +1,613 @@
+Project Idea: CodeArena AI – Next-Generation Online Coding Judge
+
+Instead of building a basic coding platform like LeetCode, create a platform with AI-powered feedback, real-world coding challenges, contests, analytics, and collaborative coding.
+
+📌 Project Overview
+
+Project Name: CodeArena AI
+
+A cloud-based coding platform where students can:
+
+Solve coding problems
+Participate in contests
+Get AI feedback
+Practice interview questions
+Collaborate with friends
+Track progress
+Earn badges
+Create custom contests
+🛠 Tech Stack
+Frontend
+React.js
+Tailwind CSS
+Monaco Editor (VS Code editor)
+React Router
+Redux Toolkit
+Chart.js
+Backend
+Spring Boot
+Spring Security
+JWT Authentication
+Spring Data JPA
+WebSocket
+REST APIs
+Database
+PostgreSQL
+Code Execution
+
+Instead of executing directly on the server,
+
+Use
+
+Docker Containers
+
+Example
+
+Java
+Python
+C++
+JavaScript
+Go
+
+Each submission creates
+
+Docker Container
+
+↓
+
+Compile
+
+↓
+
+Run Test Cases
+
+↓
+
+Delete Container
+
+Safe and scalable.
+
+☁ Cloud
+
+AWS EC2
+
+AWS S3
+
+AWS RDS
+
+Redis
+
+Docker
+
+GitHub Actions
+
+NGINX
+
+Folder Structure
+CodeArena
+
+frontend/
+
+backend/
+
+judge-service/
+
+docker-images/
+
+problem-service/
+
+contest-service/
+
+chat-service/
+
+notification-service/
+
+Instead of one backend,
+
+Create
+
+Microservices.
+
+Main Modules
+1. Authentication
+
+Login
+
+Signup
+
+Google Login
+
+Forgot Password
+
+OTP Verification
+
+JWT
+
+Refresh Token
+
+Role Based Access
+
+Roles
+
+Student
+
+Problem Setter
+
+Admin
+2. Dashboard
+
+Shows
+
+Solved Problems
+
+Current Rating
+
+Contest Rank
+
+Recent Activity
+
+Streak
+
+Badges
+
+Friends
+
+AI Suggestions
+3. Problem Module
+
+Each problem has
+
+Title
+
+Difficulty
+
+Statement
+
+Constraints
+
+Examples
+
+Hints
+
+Editorial
+
+Companies
+
+Tags
+
+Example
+
+Two Sum
+
+Difficulty
+
+Easy
+
+Companies
+
+Amazon
+
+Google
+
+Microsoft
+
+Apple
+4. Online IDE
+
+Use
+
+Monaco Editor
+
+Features
+
+Autocomplete
+
+Dark Theme
+
+Format Code
+
+Custom Input
+
+Run
+
+Submit
+
+Language Change
+
+Theme Change
+
+Font Size
+
+Keyboard Shortcuts
+
+5. Docker Judge
+
+Flow
+
+Write Code
+
+↓
+
+Submit
+
+↓
+
+Backend
+
+↓
+
+RabbitMQ Queue
+
+↓
+
+Judge Service
+
+↓
+
+Docker Container
+
+↓
+
+Compile
+
+↓
+
+Execute
+
+↓
+
+Compare Output
+
+↓
+
+Store Result
+
+↓
+
+Return Verdict
+
+Verdicts
+
+Accepted
+
+Wrong Answer
+
+Time Limit Exceeded
+
+Memory Limit Exceeded
+
+Compilation Error
+
+Runtime Error
+6. AI Code Review ⭐
+
+Unique Feature
+
+After submission
+
+AI tells
+
+Time Complexity
+
+Space Complexity
+
+Possible Bugs
+
+Cleaner Solution
+
+Edge Cases
+
+Interview Tips
+
+Optimization
+
+Example
+
+Current Complexity
+
+O(n²)
+
+AI Suggestion
+
+Can be optimized to O(n)
+
+using HashMap.
+7. AI Hint System
+
+Instead of giving answer
+
+AI gives
+
+Hint 1
+
+↓
+
+Hint 2
+
+↓
+
+Hint 3
+
+↓
+
+Solution
+
+Exactly like real interview.
+
+8. Contest Module
+
+Admin creates contest
+
+Contest Name
+
+Duration
+
+Problems
+
+Leaderboard
+
+Rating
+
+Virtual Contest
+
+Contest timer
+
+Live leaderboard
+
+Freeze leaderboard
+
+Contest discussion
+
+9. Rating System
+
+Implement
+
+ELO Rating
+
+Like Codeforces
+
+Rating colors
+
+Gray
+
+Green
+
+Cyan
+
+Blue
+
+Purple
+
+Orange
+
+Red
+10. Gamification
+
+Daily Challenge
+
+Weekly Challenge
+
+Monthly Contest
+
+XP
+
+Coins
+
+Badges
+
+Achievements
+
+Levels
+
+Unlock Themes
+
+11. Friends System
+
+Add Friends
+
+Challenge Friend
+
+Compare Ratings
+
+See Activity
+
+Private Contest
+
+12. Discussion Forum
+
+Every problem has
+
+Discussion
+
+Hints
+
+Editorial
+
+Solutions
+
+Comments
+
+Upvotes
+13. Company Interview Track
+
+Practice
+
+Amazon
+
+Google
+
+Microsoft
+
+Adobe
+
+Uber
+
+Flipkart
+
+Atlassian
+
+Question filtering
+
+14. Analytics Dashboard
+
+Charts
+
+Accuracy
+
+Languages Used
+
+Difficulty Solved
+
+Acceptance Rate
+
+Contest Rating
+
+Heatmap
+
+Streak
+15. Admin Panel
+
+Manage
+
+Users
+
+Problems
+
+Contests
+
+Reports
+
+Leaderboard
+
+Announcements
+
+16. Notification System
+
+WebSocket
+
+Real-time
+
+Contest starts
+
+Friend challenge
+
+Submission result
+
+Announcements
+
+17. Security
+
+Rate Limiting
+
+JWT
+
+Refresh Token
+
+Docker Isolation
+
+SQL Injection Protection
+
+XSS Protection
+
+CSRF
+
+HTTPS
+
+Database Tables
+users
+
+roles
+
+problems
+
+test_cases
+
+submissions
+
+languages
+
+contests
+
+contest_problems
+
+leaderboards
+
+badges
+
+friends
+
+notifications
+
+discussions
+
+editorials
+
+companies
+
+problem_tags
+System Design
+                React
+
+                  |
+
+        Spring Boot API Gateway
+
+        /      |        \
+
+Problem   Contest   User
+
+   |         |        |
+
+ PostgreSQL PostgreSQL PostgreSQL
+
+         |
+
+RabbitMQ Queue
+
+         |
+
+Judge Service
+
+         |
+
+Docker Container
+
+         |
+
+Compile
+
+↓
+
+Run
+
+↓
+
+Output
+
+↓
+
+Result
+
+↓
+
+Database
+Advanced Features (Unique)
+🔥 AI Interview Mode
+
+After solving a problem, the platform asks follow-up questions like an interviewer, helping users explain their approach and improve communication skills.
+
+🎙 Voice Coding Round
+
+Users solve problems while explaining their logic aloud. Speech is transcribed and stored alongside the solution for later review.
+
+🧠 Personalized Learning Path
+
+Recommend the next problems based on performance, weak topics, and contest history instead of showing a static list.
+
+👥 Collaborative Coding Rooms
+
+Two or more users can solve the same problem together with a shared editor, live cursor positions, and built-in chat.
+
+📹 Submission Replay
+
+Record each coding session (editor changes and execution timeline) so users can replay how they arrived at the solution and identify mistakes.
